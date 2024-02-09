@@ -88,7 +88,7 @@ main {
   font-size: 28px;
 }
 
-.weather-forecast {
+#forecast {
   margin-top: 20px;
   color: #000;
   display: flex;
@@ -127,11 +127,15 @@ main {
   padding: 0 10px;
 }
 
-.col-2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.weather-forecast-temperature-max {
+  padding: 0 10px;
 }
+
+/* .col-2 { */
+/* display: flex; */
+/* align-items: center; */
+/* flex-direction: column; */
+/* } */
 
 footer {
   border-top: 1px solid #f9f7fe;
