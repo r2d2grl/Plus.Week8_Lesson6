@@ -111,6 +111,21 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
+function getSeason() {
+  const month = new Date().getMonth() + 1;
+  if (month >= 3 && month <= 5) {
+    return `spring`;
+  } else if (month >= 6 && month <= 8) {
+    return `summer`;
+  } else if (month >= 9 && month <= 11) {
+    return `autumn`;
+  } else {
+    return `winter`;
+  }
+}
+
+console.log(getSeason);
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
