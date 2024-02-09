@@ -124,7 +124,8 @@ function getSeason() {
   }
 }
 
-console.log(getSeason);
+let Season = getSeason();
+console.log(Season);
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
